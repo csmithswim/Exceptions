@@ -35,5 +35,31 @@ Exception class is the parent for all checked and unchecked exceptions.
 
 RuntimeException are considered unchecked exceptions.
 
+Defensive programming is good for building a library or framework for other's to use. Don't use that much in an application, 
+just use it from a user input/external systems, i.e. the boundary of the application.
+
+Desktop/Mobile apps have generic exception handlers that catch all types and display their message.
+
+Java provides a lot of general exception classes but sometimes custom exceptions are useful for a library or framework
+for others to use and allow other users/devs to understand the actual problem and intent.
+
+Always use the Exception suffix to name your exceptions, similarly to how we name classes.
+
+In Java, we can also chain exceptions, which is wrapping an exception in a more general exception.
+
+Chaining exceptions is used in libraries and frameworks a lot.
+
+Exception initCause method takes a throwable object.
+
+Exception get cause method returns a throwable object.
+
+
+
+
+
+
+
+
+
 
 
